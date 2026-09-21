@@ -30,7 +30,7 @@ const DEFAULT_SITE_DATA = {
     name: "Kishan Soni",
     title: "Founder & Master Ceiling Specialist",
     experience: "12+ Years Experience",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    photo: "images/kishan.jpeg",
     quote: "Har ceiling ek kala hai, aur aapka ghar aapka sapna. Hum har project ko prem aur uchcha gunvatta ke sath design karte hain.",
     bio: "Namaste! Kishan Interior & False Ceiling me aapka swagat hai. Pichhle 12 varsho se hum Faridabad, Gurgaon, Delhi NCR aur pure Haryana me best-in-class Gypsum ceiling, PVC panels, Grid tiles aur decorative partitions ka kaam kar rahe hain. Hamari team on-time delivery, certified materials aur affordable rates ke sath behtareen finishing pradan karti hai.",
     signatureBadge: "Verified Master Contractor"
@@ -165,9 +165,19 @@ class StorageManager {
     const settings = await this.getSetting('site_data');
     if (!settings) {
       await this.saveSetting('site_data', DEFAULT_SITE_DATA);
-    } else if (settings.admin && settings.admin.password === 'admin123') {
-      settings.admin.password = 'Haryanafbd@121004';
-      await this.saveSetting('site_data', settings);
+    } else {
+      let changed = false;
+      if (settings.admin && settings.admin.password === 'admin123') {
+        settings.admin.password = 'Haryanafbd@121004';
+        changed = true;
+      }
+      if (settings.owner && (!settings.owner.photo || settings.owner.photo.includes('unsplash.com'))) {
+        settings.owner.photo = 'images/kishan.jpeg';
+        changed = true;
+      }
+      if (changed) {
+        await this.saveSetting('site_data', settings);
+      }
     }
   }
 
