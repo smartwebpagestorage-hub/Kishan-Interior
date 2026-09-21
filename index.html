@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kishan Interior & False Ceiling | Gypsum, Grid, PVC Ceiling & Partitions Faridabad</title>
+  <meta name="description" content="Kishan Interior & False Ceiling - Specialist in Gypsum False Ceiling, Grid Ceiling, PVC Ceiling, and Gypsum Partitions in Faridabad, Delhi NCR, and Haryana. We Design Your Dreams.">
+  
+  <!-- Google Fonts: Outfit & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <!-- Admin Active Top Bar (Visible when Admin is Logged In) -->
+  <div id="adminStatusBar" class="admin-status-bar">
+    <div class="container admin-bar-inner">
+      <div class="admin-badge">
+        <i class="fa-solid fa-crown text-gold"></i>
+        <span>Admin Mode Active (Welcome Kishan Ji)</span>
+      </div>
+      <div class="admin-bar-actions">
+        <button class="btn btn-sm btn-primary" onclick="window.adminManager.openAddProjectModal()">
+          <i class="fa-solid fa-plus"></i> Add New Work
+        </button>
+        <button class="btn btn-sm btn-outline" onclick="window.adminManager.openOwnerEditModal()">
+          <i class="fa-solid fa-user-pen"></i> Edit Owner & Photo
+        </button>
+        <button class="btn btn-sm btn-outline" onclick="window.adminManager.openSiteContactModal()">
+          <i class="fa-solid fa-sliders"></i> Edit Website Details
+        </button>
+        <button class="btn btn-sm btn-outline" onclick="window.adminManager.exportData()">
+          <i class="fa-solid fa-download"></i> Backup Data
+        </button>
+        <button id="btnAdminLogout" class="btn btn-sm btn-outline" style="color:var(--accent-red); border-color:rgba(239,68,68,0.4);">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo">
+        <div class="logo-symbol">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="brand-text">
+          <h1 class="data-bus-name">KISHAN INTERIOR</h1>
+          <span class="data-bus-tagline">& FALSE CEILING</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#owner" class="nav-link">Founder</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Our Work</a></li>
+        <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+        <li><a href="#estimator" class="nav-link">Cost Calculator</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <button id="btnAdminLoginNav" class="admin-nav-btn" title="Admin Login / Management">
+          <i class="fa-solid fa-lock"></i> Admin Portal
+        </button>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text-col">
+        <div class="hero-badge-wrap">
+          <span class="badge-gold">
+            <i class="fa-solid fa-award"></i> #1 False Ceiling Contractor in Faridabad & NCR
+          </span>
+        </div>
+        <h2 class="hero-title">
+          We Design <span class="gradient-gold-text">Your Dreams</span> With Master Craftsmanship.
+        </h2>
+        <p class="hero-subtitle">
+          Transform your residential and commercial spaces with exquisite Gypsum False Ceilings, 2x2 Grid Ceilings, waterproof PVC Wall Panels, and Soundproof Gypsum Partitions. Precision finishing built to last.
+        </p>
+
+        <div class="hero-cta-wrap">
+          <a href="#estimator" class="btn btn-primary">
+            <i class="fa-solid fa-calculator"></i> Get Free Estimate
+          </a>
+          <a href="tel:9986451581" class="btn btn-outline">
+            <i class="fa-solid fa-phone"></i> Call 9986451581
+          </a>
+          <a href="#" class="btn btn-whatsapp data-bus-whatsapp" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feature-pill">
+            <i class="fa-solid fa-users-gear"></i>
+            <span>Expert Team</span>
+          </div>
+          <div class="hero-feature-pill">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Premium Quality</span>
+          </div>
+          <div class="hero-feature-pill">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>On Time Completion</span>
+          </div>
+          <div class="hero-feature-pill">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <span>Affordable Prices</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-col">
+        <div class="hero-visual-card">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Luxury False Ceiling Design">
+          </div>
+          <div class="hero-floating-card">
+            <div>
+              <div class="hfc-title">Luxury Gypsum Cove Lighting</div>
+              <div class="hfc-sub">Saint-Gobain Gyproc Certified Framework</div>
+            </div>
+            <div class="text-gold" style="font-size: 1.5rem;">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder / Owner Profile Section (Specifically Requested Feature) -->
+  <section id="owner" class="owner-section">
+    <div class="container">
+      <div class="owner-container">
+        <div class="owner-photo-col">
+          <div class="owner-photo-frame">
+            <img id="ownerPhotoDisplay" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Kishan Soni - Owner">
+            <div id="ownerBadgeDisplay" class="owner-badge-tag">Verified Master Contractor</div>
+          </div>
+        </div>
+
+        <div class="owner-info-content">
+          <span class="badge-gold" style="margin-bottom: 12px;">
+            <i class="fa-solid fa-id-badge"></i> Founder & Master Craftsman
+          </span>
+          <h2 id="ownerNameDisplay">Kishan Soni</h2>
+          <div id="ownerTitleDisplay" class="owner-role-title">Founder & Lead Ceiling Specialist</div>
+          
+          <div id="ownerQuoteDisplay" class="owner-quote-box">
+            "Har ceiling ek kala hai, aur aapka ghar aapka sapna. Hum har project ko prem aur uchcha gunvatta ke sath design karte hain."
+          </div>
+
+          <p id="ownerBioDisplay" class="owner-bio-text">
+            Namaste! Kishan Interior & False Ceiling me aapka swagat hai. Pichhle 12 varsho se hum Faridabad, Gurgaon, Delhi NCR aur pure Haryana me best-in-class Gypsum ceiling, PVC panels, Grid tiles aur decorative partitions ka kaam kar rahe hain. Hamari team on-time delivery, certified materials aur affordable rates ke sath behtareen finishing pradan karti hai.
+          </p>
+
+          <div class="owner-meta-row">
+            <div class="owner-stat-box">
+              <span id="statProjects" class="owner-stat-number">850+</span>
+              <span class="owner-stat-label">Projects Completed</span>
+            </div>
+            <div class="owner-stat-box">
+              <span id="statClients" class="owner-stat-number">780+</span>
+              <span class="owner-stat-label">Happy Homeowners</span>
+            </div>
+            <div class="owner-stat-box">
+              <span id="statExp" class="owner-stat-number">12+</span>
+              <span class="owner-stat-label">Years of Mastery</span>
+            </div>
+          </div>
+
+          <div class="owner-admin-action">
+            <button class="btn btn-sm btn-outline" onclick="window.adminManager.openOwnerEditModal()">
+              <i class="fa-solid fa-camera"></i> Change Owner Photo & Bio (Admin)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-gold">Our Expertise</span>
+        <h2>Comprehensive Interior Solutions</h2>
+        <p>Engineered with branded materials, fire-rated channels, and master artisan craftsmanship.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>Special Gypsum False Ceiling</h3>
+          <p>Multi-tier designer ceilings with indirect cove lighting, magnetic track rails, and seamless gypsum plaster finish.</p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-check"></i> Saint-Gobain Gyproc Sheets</li>
+            <li><i class="fa-solid fa-check"></i> Heavy Gauge GI Channel Framework</li>
+            <li><i class="fa-solid fa-check"></i> Crack-free joint tape finishing</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-border-all"></i>
+          </div>
+          <h3>2x2 Grid Acoustic Ceiling</h3>
+          <p>Ideal for corporate offices, hospitals, showrooms, and institutes requiring thermal insulation and sound absorption.</p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-check"></i> Armstrong / Mineral fiber tiles</li>
+            <li><i class="fa-solid fa-check"></i> Quick access to wiring & AC ducts</li>
+            <li><i class="fa-solid fa-check"></i> Sag-resistant & moisture repellent</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3>PVC Ceiling & Wall Panelling</h3>
+          <p>100% waterproof, termite-free, lightweight panels featuring wood grains, fluted textures, and marble gloss effects.</p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-check"></i> Zero maintenance & washable</li>
+            <li><i class="fa-solid fa-check"></i> Perfect for kitchens & balconies</li>
+            <li><i class="fa-solid fa-check"></i> Fast interlocking installation</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-table-columns"></i>
+          </div>
+          <h3>Gypsum Drywall Partition</h3>
+          <p>Sturdy, sound-insulated wall partitions for dividing rooms, cabins, and commercial halls with integrated electrical conduits.</p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-check"></i> Double skin sound insulation</li>
+            <li><i class="fa-solid fa-check"></i> Glass door & window cutouts</li>
+            <li><i class="fa-solid fa-check"></i> Light weight, safe on building structure</li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Modern POP & Designer Lights</h3>
+          <p>Architectural plaster moldings, CNC cutouts, backlit onyx panels, and contemporary spotlight layout planning.</p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-check"></i> Customized 3D geometric shapes</li>
+            <li><i class="fa-solid fa-check"></i> Chandelier load-bearing hooks</li>
+            <li><i class="fa-solid fa-check"></i> High-grade pure POP casting</li>
+          </ul>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+          <h3>Texture Painting & Wall Decor</h3>
+          <p>Metallic Royal Play textures, charcoal louvers, and accent backdrop walls to complement your ceiling design.</p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-check"></i> Asian Paints Royale range</li>
+            <li><i class="fa-solid fa-check"></i> Dust-free sanding & primer</li>
+            <li><i class="fa-solid fa-check"></i> Long-lasting vibrant color shades</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Our Works Section (With Upload and Video Support) -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-gold">Craftsmanship Gallery</span>
+        <h2>Recent Completed Projects</h2>
+        <p>Explore our latest on-site ceiling transformations, drywall installations, and site walkthrough videos.</p>
+      </div>
+
+      <div class="portfolio-controls">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="gypsum">Gypsum Ceiling</button>
+          <button class="filter-btn" data-filter="grid">Grid Ceiling</button>
+          <button class="filter-btn" data-filter="pvc">PVC Panels</button>
+          <button class="filter-btn" data-filter="partition">Partitions</button>
+          <button class="filter-btn" data-filter="video"><i class="fa-solid fa-play"></i> Site Videos</button>
+        </div>
+
+        <div class="admin-gallery-actions">
+          <button class="btn btn-primary" onclick="window.adminManager.openAddProjectModal()">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Upload New Work (Admin)
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Grid Populated Dynamically via JS/IndexedDB -->
+      <div id="worksGrid" class="works-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section (Pillars from Banner) -->
+  <section id="why-us" class="why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-gold">The Kishan Guarantee</span>
+        <h2>Why Customers Trust Us</h2>
+        <p>Commitment to perfection, genuine materials, and customer satisfaction.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h4>Expert Team</h4>
+          <p>Certified master carpenters, ceiling fitters, and electricians with extensive experience in luxury interiors.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <h4>Premium Quality</h4>
+          <p>Only authentic Saint-Gobain Gyproc boards, Armstrong grids, and high-strength galvanized channels.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-business-time"></i>
+          </div>
+          <h4>On Time Completion</h4>
+          <p>Strict milestone planning so your project is handed over cleanly without frustrating delays.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+          <h4>Affordable Prices</h4>
+          <p>Direct contractor rates with no middleman markup, transparent square-foot pricing, and zero hidden charges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cost Estimator Section -->
+  <section id="estimator" class="estimator-section">
+    <div class="container">
+      <div class="estimator-card">
+        <div class="section-header" style="margin-bottom: 35px;">
+          <span class="badge-gold"><i class="fa-solid fa-calculator"></i> Quick Quote</span>
+          <h2>Instant False Ceiling Estimator</h2>
+          <p>Select your service, input the carpet area, and calculate approximate project cost.</p>
+        </div>
+
+        <div class="estimator-form-grid">
+          <div class="form-group">
+            <label for="estServiceSelect">Select Interior Work</label>
+            <select id="estServiceSelect" class="form-control">
+              <option value="gypsum">Gypsum False Ceiling (Saint-Gobain)</option>
+              <option value="grid">2x2 Acoustic Grid Tile Ceiling</option>
+              <option value="pvc">PVC Designer Ceiling / Wall Panelling</option>
+              <option value="partition">Gypsum Drywall Partition</option>
+              <option value="pop">Modern POP Geometric Cove Design</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="estAreaInput">Estimated Area (in Sq. Ft.)</label>
+            <input type="number" id="estAreaInput" class="form-control" placeholder="e.g. 350 sq.ft" value="300" min="50">
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 24px;">
+          <button id="btnCalculateEstimate" class="btn btn-primary" style="padding: 14px 34px;">
+            <i class="fa-solid fa-sparkles"></i> Calculate Estimated Cost
+          </button>
+        </div>
+
+        <div id="estimateResultBox" class="estimate-result-box" style="display: none;">
+          <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold-light);">Estimated Budget Range</span>
+          <div id="estAmountDisplay" class="estAmount">₹28,500 - ₹37,500</div>
+          <p style="font-size: 0.85rem; color: var(--chrome-mid); max-width: 500px;">
+            *Approximate cost including materials, framing, and labor. Final quotation subject to site laser measurement.
+          </p>
+          <a id="estWhatsAppBtn" href="#" class="btn btn-whatsapp" target="_blank" rel="noopener" style="margin-top: 10px;">
+            <i class="fa-brands fa-whatsapp"></i> Lock This Estimate on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-gold">Get in Touch</span>
+        <h2>Contact Kishan Interior & False Ceiling</h2>
+        <p>Ready to redesign your home or workspace? Call or visit us today.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text-box">
+              <h5>Direct Phone Numbers</h5>
+              <a href="tel:9986451581" class="data-bus-phone1">9986451581</a>
+              <a href="tel:9918988169" class="data-bus-phone2">9918988169</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-text-box">
+              <h5>Email Address</h5>
+              <a href="mailto:sonikishan40664@gmail.com" class="data-bus-email">sonikishan40664@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-text-box">
+              <h5>Workshop & Office Address</h5>
+              <p class="data-bus-address">Rajeev nagar, D.LF Area Faridabad, Haryana</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-text-box">
+              <h5>Working Hours</h5>
+              <p>Monday - Sunday: 8:00 AM - 9:00 PM (All 7 Days)</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="tel:9986451581" class="btn btn-primary">
+              <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+            <a href="#" class="btn btn-whatsapp data-bus-whatsapp" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+        <div class="banner-showcase-box">
+          <h4 style="color: var(--gold-light); font-family: var(--font-heading);">
+            <i class="fa-solid fa-certificate text-gold"></i> Official Business Identification
+          </h4>
+          <p style="font-size: 0.9rem; color: var(--chrome-mid);">
+            Serving all sectors of Faridabad (NIT, Greater Faridabad, DLF, Green Fields, Ballabgarh), Gurgaon, Noida & Delhi NCR.
+          </p>
+          <div class="banner-img-preview">
+            <img src="images/banner.jpg" alt="Kishan Interior & False Ceiling Official Banner" style="cursor:pointer;" onclick="openCustomLightbox('images/banner.jpg', 'Official Business Banner', 'Kishan Interior & False Ceiling - Faridabad, Haryana')">
+          </div>
+          <div style="font-size: 0.85rem; color: var(--gold-primary); text-align: center; font-weight: 600;">
+            <i class="fa-solid fa-check-double"></i> Free Site Inspection & Laser Measurement Across Faridabad & NCR
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo" style="margin-bottom: 12px;">
+          <div class="logo-symbol">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="brand-text">
+            <h1 class="data-bus-name" style="font-size: 1.1rem;">KISHAN INTERIOR</h1>
+            <span class="data-bus-tagline">We Design Your Dreams</span>
+          </div>
+        </div>
+        <p>
+          Premier False Ceiling & Interior Specialist based in Faridabad, Haryana. Committed to providing premium quality gypsum ceilings, acoustic grid ceilings, and PVC wall panels.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#owner">Founder Message</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#portfolio">Project Gallery</a></li>
+          <li><a href="#estimator">Cost Calculator</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Gypsum False Ceiling</a></li>
+          <li><a href="#services">Armstrong Grid Ceiling</a></li>
+          <li><a href="#services">Waterproof PVC Panels</a></li>
+          <li><a href="#services">Drywall Gypsum Partitions</a></li>
+          <li><a href="#services">Geometric POP & Lighting</a></li>
+        </ul>
+        <div style="margin-top: 20px;">
+          <button class="btn btn-sm btn-outline" onclick="window.adminManager.openLoginModal()" style="font-size: 0.78rem;">
+            <i class="fa-solid fa-shield-keyhole"></i> Owner/Admin Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Kishan Interior & False Ceiling. All rights reserved. Crafted with excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (Desktop) -->
+  <div class="floating-actions">
+    <a href="#" class="floating-btn whatsapp data-bus-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:9986451581" class="floating-btn call" aria-label="Call Now">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Sticky Bottom Quick Action Bar (Visible only on mobile devices) -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:9986451581" class="mob-bar-btn call">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="#" class="mob-bar-btn whatsapp data-bus-whatsapp" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#estimator" class="mob-bar-btn quote">
+      <i class="fa-solid fa-calculator"></i>
+      <span>Get Estimate</span>
+    </a>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODALS & DIALOGS -->
+  <!-- ========================================================================= -->
+
+  <!-- Lightbox Modal (For viewing images & playing videos full screen) -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content-wrap">
+      <div id="lightboxMedia"></div>
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle"></h4>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Login Modal -->
+  <div id="adminLoginModal" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-lock text-gold"></i> Admin Portal Login</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <form id="adminLoginForm" onsubmit="window.adminManager.handleLogin(event); return false;">
+        <div class="modal-body">
+          <p style="font-size:0.9rem; color:var(--chrome-mid); margin-bottom:18px;">
+            Enter your admin credentials to upload images/videos and manage website contents.
+          </p>
+          <div id="adminLoginError" style="display:none; color:#f87171; background:rgba(239,68,68,0.15); border:1px solid #ef4444; padding:10px 14px; border-radius:8px; margin-bottom:16px; font-size:0.88rem; line-height:1.5;"></div>
+          <div class="form-group" style="margin-bottom:16px;">
+            <label for="adminEmailInput">Admin Email</label>
+            <input type="email" id="adminEmailInput" class="form-control" value="sonikishan40664@gmail.com" required>
+          </div>
+          <div class="form-group">
+            <label for="adminPassInput">Password</label>
+            <div class="password-input-wrap">
+              <input type="password" id="adminPassInput" class="form-control" placeholder="Enter password (default: Haryanafbd@121004)" required>
+              <button type="button" class="btn-toggle-password" onclick="togglePasswordVisibility('adminPassInput', this)" title="Show/Hide Password" aria-label="Toggle password visibility">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-right-to-bracket"></i> Login as Admin
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard Modal (Quick Hub) -->
+  <div id="adminDashboardModal" class="modal-backdrop">
+    <div class="modal-box modal-lg">
+      <div class="modal-header">
+        <div>
+          <h3><i class="fa-solid fa-gauge text-gold"></i> Admin Management Hub</h3>
+          <span style="font-size:0.8rem; color:var(--gold-light);">Welcome Kishan Ji • Full Website Control Panel</span>
+        </div>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:16px; margin-bottom:20px;">
+          <!-- Action 1 -->
+          <div class="service-card" onclick="window.adminManager.openAddProjectModal()" style="cursor:pointer; padding:20px; border-color:var(--gold-primary); background:rgba(212,175,55,0.08);">
+            <div class="service-icon-wrap" style="width:48px; height:48px; font-size:1.2rem; margin-bottom:12px;">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <h4 style="color:var(--gold-light); margin-bottom:6px;">Upload New Work</h4>
+            <p style="font-size:0.82rem; margin-bottom:0;">Add new Gypsum, Grid, PVC ceiling images or site videos.</p>
+          </div>
+
+          <!-- Action 2 -->
+          <div class="service-card" onclick="window.adminManager.openOwnerEditModal()" style="cursor:pointer; padding:20px;">
+            <div class="service-icon-wrap" style="width:48px; height:48px; font-size:1.2rem; margin-bottom:12px;">
+              <i class="fa-solid fa-user-pen"></i>
+            </div>
+            <h4 style="color:var(--gold-light); margin-bottom:6px;">Edit Founder & Photo</h4>
+            <p style="font-size:0.82rem; margin-bottom:0;">Upload owner photo, change greeting quote & experience.</p>
+          </div>
+
+          <!-- Action 3 -->
+          <div class="service-card" onclick="window.adminManager.openSiteContactModal()" style="cursor:pointer; padding:20px;">
+            <div class="service-icon-wrap" style="width:48px; height:48px; font-size:1.2rem; margin-bottom:12px;">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h4 style="color:var(--gold-light); margin-bottom:6px;">Edit Contact Details</h4>
+            <p style="font-size:0.82rem; margin-bottom:0;">Update phones, email, address, WhatsApp & business tagline.</p>
+          </div>
+
+          <!-- Action 4 -->
+          <div class="service-card" onclick="window.adminManager.openSecurityModal()" style="cursor:pointer; padding:20px;">
+            <div class="service-icon-wrap" style="width:48px; height:48px; font-size:1.2rem; margin-bottom:12px;">
+              <i class="fa-solid fa-key"></i>
+            </div>
+            <h4 style="color:var(--gold-light); margin-bottom:6px;">Change Password</h4>
+            <p style="font-size:0.82rem; margin-bottom:0;">Update admin login password or change email id.</p>
+          </div>
+
+          <!-- Action 5 -->
+          <div class="service-card" onclick="window.adminManager.exportData()" style="cursor:pointer; padding:20px;">
+            <div class="service-icon-wrap" style="width:48px; height:48px; font-size:1.2rem; margin-bottom:12px;">
+              <i class="fa-solid fa-file-export"></i>
+            </div>
+            <h4 style="color:var(--gold-light); margin-bottom:6px;">Download Backup</h4>
+            <p style="font-size:0.82rem; margin-bottom:0;">Export all uploaded photos, videos & settings as a JSON file.</p>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <button class="btn btn-sm btn-outline" style="color:var(--accent-red); border-color:rgba(239,68,68,0.3);" onclick="window.adminManager.resetAllData()">
+            <i class="fa-solid fa-rotate-left"></i> Reset to Original Defaults
+          </button>
+          <button class="btn btn-sm btn-outline" onclick="window.adminManager.handleLogout()">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Add / Edit Modal (Image & Video Upload / Link) -->
+  <div id="projectModal" class="modal-backdrop">
+    <div class="modal-box modal-lg">
+      <div class="modal-header">
+        <h3 id="projectModalTitle"><i class="fa-solid fa-cloud-arrow-up text-gold"></i> Add New Work Showcase</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <form id="projectForm">
+        <input type="hidden" id="projIdInput">
+        <div class="modal-body" style="display:flex; flex-direction:column; gap:16px;">
+          <div class="form-group">
+            <label for="projTitleInput">Project Title *</label>
+            <input type="text" id="projTitleInput" class="form-control" placeholder="e.g. Master Bedroom Luxury Gypsum Ceiling" required>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="form-group">
+              <label for="projCategorySelect">Work Category *</label>
+              <select id="projCategorySelect" class="form-control" required>
+                <option value="gypsum">Gypsum False Ceiling</option>
+                <option value="grid">2x2 Grid Ceiling</option>
+                <option value="pvc">PVC Ceiling & Panelling</option>
+                <option value="partition">Gypsum Partition</option>
+                <option value="video">Site Video Tour</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="projLocationInput">Project Location</label>
+              <input type="text" id="projLocationInput" class="form-control" placeholder="e.g. Sector 16, Faridabad">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Media Source Method *</label>
+            <div style="display:flex; gap:20px; align-items:center; margin-top:4px;">
+              <label style="display:flex; align-items:center; gap:8px; cursor:pointer; color:var(--chrome-light);">
+                <input type="radio" name="mediaSourceType" value="upload" checked>
+                <span><i class="fa-solid fa-upload text-gold"></i> Upload Local File (Image / Video)</span>
+              </label>
+              <label style="display:flex; align-items:center; gap:8px; cursor:pointer; color:var(--chrome-light);">
+                <input type="radio" name="mediaSourceType" value="url">
+                <span><i class="fa-solid fa-link text-gold"></i> Paste Web Link (YouTube / Image URL)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- File Upload Zone -->
+          <div id="mediaUploadGroup" class="form-group">
+            <div class="upload-zone" onclick="document.getElementById('projFileInput').click()">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <p style="font-weight:600; color:var(--chrome-light); margin-bottom:4px;">Click or Drag & Drop Image or Video File Here</p>
+              <span style="font-size:0.8rem; color:var(--chrome-mid);">Supports JPG, PNG, WEBP, MP4, WebM (Saved to browser database)</span>
+              <input type="file" id="projFileInput" accept="image/*,video/*" style="display:none;">
+            </div>
+          </div>
+
+          <!-- Online URL Input Zone -->
+          <div id="mediaUrlGroup" class="form-group" style="display:none;">
+            <label for="projUrlInput">Image or Video URL *</label>
+            <input type="url" id="projUrlInput" class="form-control" placeholder="https://images.unsplash.com/... or https://youtube.com/watch?v=...">
+          </div>
+
+          <!-- Live Media Preview -->
+          <div id="mediaPreviewBox" style="display:none; background:rgba(0,0,0,0.5); padding:12px; border-radius:8px; text-align:center;">
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="form-group">
+              <label for="projDateInput">Completion Date</label>
+              <input type="date" id="projDateInput" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="projDescInput">Work Details / Description</label>
+            <textarea id="projDescInput" class="form-control" rows="3" placeholder="Materials used, cove lighting, special features..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-floppy-disk"></i> Save Project Card
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Owner Profile & Photo Edit Modal -->
+  <div id="ownerModal" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-user-pen text-gold"></i> Edit Founder Info & Photo</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <form id="ownerEditForm">
+        <div class="modal-body" style="display:flex; flex-direction:column; gap:16px;">
+          <div class="form-group">
+            <label for="ownerNameInput">Owner Name *</label>
+            <input type="text" id="ownerNameInput" class="form-control" value="Kishan Soni" required>
+          </div>
+
+          <div class="form-group">
+            <label for="ownerTitleInput">Designation / Title</label>
+            <input type="text" id="ownerTitleInput" class="form-control" value="Founder & Master False Ceiling Craftsman">
+          </div>
+
+          <div class="form-group">
+            <label for="ownerBadgeInput">Experience Badge Text</label>
+            <input type="text" id="ownerBadgeInput" class="form-control" value="12+ Years Experience">
+          </div>
+
+          <!-- Owner Photo Options: Upload file or URL -->
+          <div class="form-group">
+            <label>Owner Photo</label>
+            <div style="display:flex; gap:16px; align-items:center;">
+              <img id="ownerPhotoPreview" src="" alt="Preview" style="width:70px; height:70px; border-radius:12px; object-fit:cover; border:2px solid var(--gold-primary); display:none;">
+              <button type="button" class="btn btn-sm btn-outline" onclick="document.getElementById('ownerPhotoFileInput').click()">
+                <i class="fa-solid fa-upload"></i> Upload Photo File
+              </button>
+              <input type="file" id="ownerPhotoFileInput" accept="image/*" style="display:none;">
+            </div>
+            <div style="margin-top:8px;">
+              <span style="font-size:0.75rem; color:var(--chrome-mid); display:block; margin-bottom:4px;">Or paste Image URL:</span>
+              <input type="url" id="ownerPhotoUrlInput" class="form-control" placeholder="https://example.com/photo.jpg">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="ownerQuoteInput">Owner Greeting Quote</label>
+            <input type="text" id="ownerQuoteInput" class="form-control" placeholder="Quote in Hindi or English">
+          </div>
+
+          <div class="form-group">
+            <label for="ownerBioInput">Detailed Message / Bio</label>
+            <textarea id="ownerBioInput" class="form-control" rows="4"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-check"></i> Save Owner Profile
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Site Contact Details Edit Modal -->
+  <div id="siteContactModal" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-sliders text-gold"></i> Edit Website Details</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <form id="siteContactForm">
+        <div class="modal-body" style="display:flex; flex-direction:column; gap:14px;">
+          <div class="form-group">
+            <label for="busNameInput">Business Name</label>
+            <input type="text" id="busNameInput" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="busTaglineInput">Tagline / Slogan</label>
+            <input type="text" id="busTaglineInput" class="form-control">
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+            <div class="form-group">
+              <label for="busPhone1Input">Primary Phone</label>
+              <input type="text" id="busPhone1Input" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="busPhone2Input">Secondary Phone</label>
+              <input type="text" id="busPhone2Input" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="busEmailInput">Email Address</label>
+            <input type="email" id="busEmailInput" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="busWhatsAppInput">WhatsApp Number</label>
+            <input type="text" id="busWhatsAppInput" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="busAddressInput">Full Address / Location</label>
+            <textarea id="busAddressInput" class="form-control" rows="2"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-floppy-disk"></i> Update Details
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Security / Password Change Modal -->
+  <div id="adminSecurityModal" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-key text-gold"></i> Change Admin Password</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <form id="adminSecurityForm">
+        <div class="modal-body" style="display:flex; flex-direction:column; gap:16px;">
+          <div class="form-group">
+            <label for="newAdminEmailInput">Update Admin Email (Optional)</label>
+            <input type="email" id="newAdminEmailInput" class="form-control" placeholder="Leave empty to keep current">
+          </div>
+          <div class="form-group">
+            <label for="oldAdminPassInput">Current Password *</label>
+            <div class="password-input-wrap">
+              <input type="password" id="oldAdminPassInput" class="form-control" placeholder="Enter current password" required>
+              <button type="button" class="btn-toggle-password" onclick="togglePasswordVisibility('oldAdminPassInput', this)" title="Show/Hide Password" aria-label="Toggle password visibility">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="newAdminPassInput">New Password *</label>
+            <div class="password-input-wrap">
+              <input type="password" id="newAdminPassInput" class="form-control" placeholder="Enter new strong password" required>
+              <button type="button" class="btn-toggle-password" onclick="togglePasswordVisibility('newAdminPassInput', this)" title="Show/Hide Password" aria-label="Toggle password visibility">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save New Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/db.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
